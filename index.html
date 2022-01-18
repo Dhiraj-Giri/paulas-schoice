@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: proxima-nova,sans-serif;
+        }
+        #dfrstbr{
+            display: flex;
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+            margin-top: 0px;
+        }
+        #dfrstbr>div{
+            flex: 1;
+            border-right:1px solid rgb(255,255,250);
+            background-color: rgb(87,87,92);
+            color: rgb(255,255,250);
+        }
+        #dfrstbr>div:nth-child(3){
+            border: 0;
+        }
+        #dfrstbr>div>p{
+            text-align: center;
+
+        }
+        #dfrstbr a{
+            color:rgb(124,191,250);
+            font-size: small;
+        }
+        #dscndbr{
+            display: flex;
+            height: 90px;
+            width: 100%;
+            border-bottom: 1px solid grey;
+        }
+        .dsignoffer>p{
+            color: rgb(105,140,164);
+            padding-left: 25px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .dsignoffer>p>i{
+            color: black                        ;
+        }
+        .dpaula{
+            margin-left: 21%;
+        }
+        .dpaula>a{
+            text-decoration: none;
+            color: black;
+        }
+        .dpaula>a>h1{
+            font-size: 28px;
+            letter-spacing: 3px;
+            padding-top: 5px;
+        }
+        .dpaula>a>h3{
+            text-align: center;
+            margin-top: -24px;
+            letter-spacing:8px;
+            font-size: 15px;
+        }
+        .dsearch{
+            margin-left: 3%;
+            width: 200px;
+            height: 30%;
+            border: 2px solid rgb(213,216,220);
+            margin-top: 35px;
+            border-radius: 20px;
+        }
+        .dsearch>input{
+            width: 75%;
+            height: 85%;
+            font-size: 15px;
+            margin-top: 1.5px;
+            margin-left: 15px;
+            border: 0;
+        }
+        .dsearch>button{
+            margin-left: -7px;
+            width: 15%;
+            height: 90%;
+            font-size: large;
+            background: transparent;
+            border: 0;
+            border-left: 1px solid rgb(213,216,220);
+            color: rgb(87,87,92);
+        }
+        .daccount{
+            margin-top: 18px;
+            margin-left: 15px;
+            display: flex;
+        }
+        .daccount>h3{
+            font-weight: normal;
+            font-size: large;
+            margin-top: 27px;
+            color: rgb(87,87,92);
+        }
+        .daccount>a{
+            color: rgb(87,87,92);
+            margin-top: 17px;
+            margin-left: 10px;
+            font-size: xx-large;
+        }
+        .dbag{
+            margin-top: 18px;
+            margin-left: 25px;
+            display: flex;
+        }
+        .dbag>h3{
+            font-weight: normal;
+            font-size: large;
+            margin-top: 27px;
+            color: rgb(87,87,92);
+        }
+        .dbag>a{
+            color: rgb(87,87,92);
+            margin-top: 17px;
+            margin-left: 10px;
+            font-size: xx-large;
+        }
+        .dbag>p{
+            background-color: purple;
+            height: 20px;
+            width: 15px;
+            padding-top: 2px;
+            padding-left:6px;
+            color: snow;
+            border-radius: 7px;
+            margin-top: 12px;
+        }
+        #dthrdbr{
+            display: flex;
+            height: 48px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        #dthrdbr>div{
+            height: 40px;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            font-size: small;
+        }
+        #dthrdbr>div:nth-child(1){
+            margin-left: 2%;
+        }
+        #dthrdbr>div:nth-child(5){
+            margin-left: 17.5%;
+        }
+        #dthrdbr>div:hover{
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="dfrstbr">
+            <div>
+                <p>Free Shipping on $49</p>
+            </div>
+            <div>
+                <p>20% Off 2+ Items</p>
+            </div>
+            <div>
+                <p>Paula's Choice Perks <a href="">Get Started</a></p>
+            </div>
+        </div>
+        <div id="dscndbr">
+            <div class="dsignoffer">
+                <p><i class="far fa-envelope"></i>Sign-Up for Special Offers</p>
+            </div>
+            <div class="dpaula">
+                <a href="">
+                <h1>PAULA'S CHOICE</h1>
+                <h3>SKINCARE</h3>
+            </a>
+            </div>
+            <div class="dsearch">
+                <input type="text" id="dsrch" placeholder="Search for skin care">
+                <button id="dsym">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="daccount">
+                <h3 id="user">SIGN IN </h3>
+                <a href=""><i class="fas fa-user"></i></a>
+            </div>
+            <div class="dbag">
+                <h3>BAG</h3>
+                <a href=""><i class="fas fa-shopping-bag"></i></a>
+                <p id="dcount">0</p>
+            </div>
+        </div>
+        <div id="dthrdbr">
+            <div class="dscp">
+                <p>SKIN CARE PRODUCTS</p>
+            </div>
+            <div class="dsc">
+                <p>SKIN CONCERNS</p>
+            </div>
+            <div class="dst">
+                <p>SKIN TYPE</p>
+            </div>
+            <div class="di">
+                <p>INGREDIENTS</p>
+            </div>
+            <div class="dt">
+                <p>TRENDING</p>
+            </div>
+            <div class="dscr">
+                <p>SKIN CARE RESOURCES</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        
+    </div>
+</body>
+</html>
